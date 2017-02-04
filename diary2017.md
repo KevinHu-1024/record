@@ -101,13 +101,16 @@
 + git
   + submodule
 + css
-  + background-position / origin
-
+  + background
+    + background-origin
+    + background-clip
+    + background-attachment
+    + background-blendmode
 ## 2017/01/26
 + ansible
   + ProxyCommand
   + ansible_user / ansible_port / ansible_host / ansible_connection
-+ shell
++ network
   + route
   + nc
 
@@ -151,5 +154,61 @@
   + window.opener
   + target="\_blank" 漏洞
 + ES6
-  + class ans proptype
+  + class and proptype
 
+## 2017/02/01
++ containing block
+  + position
+    + sticky
++ writing mode
+  + horizontal-tb
+  + vertical-lr
+  + vertical-rl
++ css
+  + text-transform
+  + text-orientation
+    + upright
+    + mixed
++ github
+  + img
+
+## 2017/02/02
++ json web token
+
+## 2017/02/03
++ vim
+  + emmet
++ CSS function
+  + attr
+    + a:empty::after{ content: attr(href) }
+    + CSS Values Level 3
+  + calc
+    + CSS Values Level 3
+    + inline-block + calc  incorrect left-right layout
++ baseline
++ ::after
+  + Selectors Level 3
++ inline-block space
+  + white-space-collapsing: discard (Text Level 4)
++ FormData
++ ansible
+  + yum
++ YAML
+  + --- seperate directives from document content
+
+## 2017/02/04
++ ARP(Address Resolution Protocal)
+  + basic concept
+    + arp cache
+    + A (ip, MAC) B (ip) broadcast -> local newwork
+  + arp spoofing
++ css3
+  + all: unset
++ ansible
+  + file
+  + get_url
+  + yum
+  + apt
+  + template
++ shell
+  + file mode 0755 why 0
