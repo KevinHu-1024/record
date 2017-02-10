@@ -210,5 +210,71 @@
   + yum
   + apt
   + template
-+ shell
++ ansible
   + file mode 0755 why 0
+
+## 2017/02/06
++ tcpdump
+  + tcpdump host <ip>
+  + tcpdump 'tcp port 80'
++ wireshark
++ Progressive Web Apps
+  + Cache Storage
+  + Service Worker
+    + Web Worker
+    + App Cache 从html5.1中移除
+  + Manifest
+    + orientation
+    + theme_color
+  + Notification Api
+  + Push Api
++ ansible
+  + ansible-pull
+  + Roles
+  + ansible-galaxy
+
+## 2017/02/07
++ nslookup
++ dig
++ ansible
+  + pretask
+  + posttask
+  + {{ inventory_hostname }}
+  + local_action
+  + notify / handle
++ grid
+  + grid-auto-columns
+
+## 2017/02/09
++ ansible
+  + ansible-galaxy
+  + cosway
+  + git
+    + accept-hostkey
+  + error
+    + [ansible-galaxy python version](https://github.com/ansible/galaxy-issues/issues/209)
+    + [python3 version](https://github.com/ansible/ansible/issues/20012)
++ git
+  + known_hosts
+  + RSA
+  + SHA256
+  + ECDSA
++ markdown
+  + < escape
++ regular expresion
+  + (?=exp)
+  + (?<=exp)
+
+## 2017/02/10
++ git
+  + git clean -d -fx ""
++ content-box
++ css
+  + `.row>.column*3`
+    + .row height: 100px, .column: 100% (100px)
+    + .row height: auto(100px), .column:first-child: 100px (撑高父级) .column: 100% (**0px**) 
+    + think: height
+  + **min-height not work but work with height**
++ webpack
+  + webpack-dev-server source
+    
