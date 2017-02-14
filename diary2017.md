@@ -314,3 +314,5 @@
     + git help everyday
     + git commit -vv --amend
     + git log master...develop
+
+hello, world.
