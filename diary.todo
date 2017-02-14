@@ -6,8 +6,8 @@
    ✘ redux(19) @created(16-12-06 15:43) @cancelled (16-12-30 14:04)
    ✔ tmux @created(16-12-30 14:04) @done (17-01-11 10:11)
    ✘ jenkins(5) @created(17-01-11 15:01) @cancelled (17-01-14 15:54)
-   ☐ ansible @created(17-01-14 15:55)
-   ☐ git
+   ✔ ansible(32) @created(17-01-14 15:55) @done (17-02-13 16:21)
+   ☐ git @created(17-02-13 16:22)
    ☐ FP
    ☐ server rendering
    ☐ shell

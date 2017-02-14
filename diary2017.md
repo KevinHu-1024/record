@@ -273,8 +273,44 @@
   + `.row>.column*3`
     + .row height: 100px, .column: 100% (100px)
     + .row height: auto(100px), .column:first-child: 100px (撑高父级) .column: 100% (**0px**) 
-    + think: height
+    + think: height (多列登高)
   + **min-height not work but work with height**
 + webpack
   + webpack-dev-server source
     
+## 2017/02/11
+
++ [height](http://stackoverflow.com/questions/1122381/how-to-force-child-div-to-100-of-parents-div-without-specifying-parents-heigh?rq=1)
+
+## 2017/02/13
++ css
+  + property
+    + initial / inherit / unset
+  + svg
+    + glyph
+    + missing-glyph
++ ansible
+  + tags / always
+  + verbose / -vvv more / -vvvv debug
++ git
+  + links
+    + [git-tips](https://github.com/521xueweihan/git-tips)
+    + [git-guide](http://rogerdudler.github.io/git-guide/index.zh.html)
+  + tips
+    + git config color.ui true
+    + git help -g
+    + git update-ref -d HEAD
+    + git diff          index / working
+    + git diff HEAD     index, working / last commit
+    + git diff cached   index / last commit
+    + git checkout - 
+    + git branch -vv
+
+## 2017/02/14
++ git
+  + [Signed-off-by](http://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for)
+  + [The branch 'XXX' is not fully merged.]()
+  + tips
+    + git help everyday
+    + git commit -vv --amend
+    + git log master...develop
