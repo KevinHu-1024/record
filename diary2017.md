@@ -273,8 +273,140 @@
   + `.row>.column*3`
     + .row height: 100px, .column: 100% (100px)
     + .row height: auto(100px), .column:first-child: 100px (撑高父级) .column: 100% (**0px**) 
-    + think: height
+    + think: height (多列登高)
   + **min-height not work but work with height**
 + webpack
   + webpack-dev-server source
     
+## 2017/02/11
+
++ [height](http://stackoverflow.com/questions/1122381/how-to-force-child-div-to-100-of-parents-div-without-specifying-parents-heigh?rq=1)
+
+## 2017/02/13
++ css
+  + property
+    + initial / inherit / unset
+  + svg
+    + glyph
+    + missing-glyph
++ ansible
+  + tags / always
+  + verbose / -vvv more / -vvvv debug
++ git
+  + links
+    + [git-tips](https://github.com/521xueweihan/git-tips)
+    + [git-guide](http://rogerdudler.github.io/git-guide/index.zh.html)
+  + tips
+    + git config color.ui true
+    + git help -g
+    + git update-ref -d HEAD
+    + git diff          index / working
+    + git diff HEAD     index, working / last commit
+    + git diff cached   index / last commit
+    + git checkout - 
+    + git branch -vv
+
+## 2017/02/14
++ git
+  + [Signed-off-by](http://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for)
+  + [The branch 'XXX' is not fully merged.](http://stackoverflow.com/questions/7548926/git-and-the-branch-x-is-not-fully-merged-error)
+    + git log --graph --left-right --cherry-pick --oneline origin...develop
+    + **--cherry-pick**
+  + [Difference between "git add -A" and "git add ."](http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add?rq=1)
+  + [Git for beginners](http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
+  + tips
+    + git help everyday
+    + git commit -vv --amend
+    + git log master...develop
+    + git ls-files -o
+    + git submodule foreach git pull
+    + git cherry -v master
++ [登录那些事](https://cnodejs.org/topic/5671441a1d2912ce2a35aaa1)
++ redux
+  + location.state 原理
+
+## 2017/02/15
++ react-router
+  + location.state souce-code
+    + history.js
+      + v3 window.history.state & sessionStorage
+      + v4 window.history.state 还没出 release notes，尴尬...
++ peerDependencies
++ semver
+  + Tilde ~ 
+  + Caret ^
+  + Hyphen -
+  + X x
+  + API
+    + satisfies
++ [Master the JavaScript Interview: What is a Closure?](http://www.zcfy.cc/article/master-the-javascript-interview-what-is-a-closure-2127.html)
+
+## 2017/02/16
++ git
+  + .git/info/exclude
+  + dir
+    + info
+    + hooks
+    + refs
+    + logs
+    + objects
+  + tips
+    + git hash-object &lt;file>
+    + git cat-file -p &lt;commit-ish>
+    + git remote set-url origin &lt;url>
+    + git add -p
+    + git whatchanged --since "2 days ago"
+    + git stash save -u | git stash save --include-untracked
+    + git clean -x -d -n     remove untrcked + ignore
+    + git clean -X -d -n     remove only ignore
+  + commit-ish
+    + md5     128bit
+    + sha1    160bit   ->   echo hello, world | shasum
+    + sha256  256bit
+    + sha512
++ gerrit
++ pre git
+  + diff / patch
+  + CVS (Concurrent Versions System) 
+  + svn (Subversion)
+  + git -> BitKeeper  (2005)
+
+## 2017/02/17
++ git
+  + concept
+    + git cat-file -t &lt;commit-ish>  ->  type
+    + git cat-file -p &lt;commit-ish>  ->  content
+    + tree
+    + blob
+    + tag
+    + commit
+  + tips
+    + git show &lt;commit-ish>
+    + git show &lt;brunch-name>:&lt;file-name>
+    + git rebase -i | reword  -> commit-ish 会发生改变 修改以前的commit
+    + git commit --no-verify 
+    + git bisect
+    + git reset &lt;file>
+    + git shortlog
+    + git cherry -vv
+    + git status -sb  ->  --short --branch
+    + git log --oneline
+    + git ls-files
+    + git ls-files -s
+    + git ls-tree HEAD
+    + git reflog show master
+  + objects
+    + HEAD
+    + master
+    + refs/heads/master
+    + 
++ shell
+  + gawk
+  + wc
++ react
+  + react.cloneElement()
++ vim
+  + q  ->  recording
+
+## 2017/02/18
++ multi-column-layout
