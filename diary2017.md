@@ -382,10 +382,11 @@
     + commit
   + tips
     + git show &lt;commit-ish>
-    + git show &lt;brunch-name>:&lt;file-name>
+    + git show &lt;branch-name>:&lt;file-name>
     + git rebase -i | reword  -> commit-ish 会发生改变 修改以前的commit
     + git commit --no-verify 
-    + git bisect
+    + git commit -n
+    + git bisect | git checkout HEAD~7
     + git reset &lt;file>
     + git shortlog
     + git cherry -vv
@@ -410,3 +411,78 @@
 
 ## 2017/02/18
 + multi-column-layout
++ git
+  + git reset -> index
+  + git reset --hard -> index working-tree
+  + git reset --soft -> commit
+  + git reset --mixed -> index commit
+  + git checkout -> working-tree
+  + git diff
+    + --name-only
+    + --status-only
+  + git ls-files
+  + [how-to-use-git-bisect](http://stackoverflow.com/questions/4713088/how-to-use-git-bisect)
+  + git checkout &lt;commit>
+  + git diff-index 
++ **FE Think**
+  + 项目启动期定好 state 和 router ，定好 webpack, eslint。
+  + 项目启动期定好一些基本组件，如常见的组件 Tooltip, Modal, Alert
+  + 否则技术债很多，比如后加的 eslint 形同虚设，中期难以迁移 webpack，难以 hmr，proxy，最重要是缓存的一些问题，以及各种形式的消息提示框。
++ FP
+  + compose
++ **Git Flow Think**
+  + 
+
+## 2017/02/21
++ react
+  + state is evil
++ git
+  + git checkout HEAD~10  -> detached HEAD refers to a valid commit
++ npm
+  + types
+
+## 2017/02/22
++ css
+  + font
+  + selection background-color 不符
+  + line-height: 1.5em 根据什么为基准
+
+## 2017/02/23
++ **论表格中的tooltip与层叠上下文**
++ git
+  + git push stratety
+    + central workflow
+    + non-central workflow
+    + upstream / simple
++ css
+  + ::after 权重
+
+## 2017/02/24
++ git
+  + follow
+  + **git log need display date** -> git log --pretty=medium
+  + tips
+    + git log -p &lt;file>
+    + git log --first-parent
+    + git log master...develop
+    + git tag --list
+    + git describe -> v1.1.0-5-&lt;hash>
+    + git rm &lt;file>
+    + git checkout &lt;commit-ish> -- &lt;file>
+    + .git/info/exclude : core.excludesfile
+    + git archive -o tips.zip HEAD
+    + git rev-list master
+    + git rev-parse refs/tags/v3.0.2
+    + git revert HEAD
+    + git clone --bare
+    + git commit --allow-empty
+    + git show-ref
+    + git gc
+    + git 
++ [密码学大事件！研究人员公布第一例SHA-1哈希碰撞实例](https://zhuanlan.zhihu.com/p/25401383)
+
+## 2017/02/25
++ git
+  + git checkout -b test master
+  + git log master..develop
+  + git log master...develop
