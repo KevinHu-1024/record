@@ -486,3 +486,73 @@
   + git checkout -b test master
   + git log master..develop
   + git log master...develop
+
+## 2017/02/27
++ git
++ go
+  + defer
++ html
+  + html entity encode
+
+## 2017/02/28
++ cache
+  + cache-control
+  + age
++ gulp
+  + gulp-rev
++ FP
+  + 
+
+## 2017/03/01
+> 靡不有初鲜克有终
++ gulp
+  + gulp 4.0
++ FP
+  + Category Theory 范畴论
+  + HOC
+  + Partical Function
+  + compose
+  + curry
+  + Point-Free Style
+
+## 2017/03/02
++ RPC
++ message queue
++ FP
+  + Predicate
+  + Contract
++ ES6
+  + [semi](http://www.ecma-international.org/ecma-262/6.0/index.html#sec-automatic-semicolon-insertion)
++ setTimeout 浏览器环境与node环境不一致
++ [如果你想靠前端技术还房贷，你不能连这个都不会](https://zhuanlan.zhihu.com/p/25259283?refer=fe-mm)
++ [Excuse me？这个前端面试在搞事！](https://zhuanlan.zhihu.com/p/25407758)
+  + Event Loop && promise
++ **Cache Control**
+  + github
+  + taobao
+  + zhihu
+  + gold
+
+## 2017/03/03
++ js
+  + 'use strict'  this | 严格模式与node
+  + node environment: module this [node this](https://segmentfault.com/q/1010000005128554)
+  + Object.seal
+  + Object.freeze
++ FP
+  + **curry**
+  + Constant -> Referential Transparency
+  + Category
+    + 
+
+## 2017/03/05
+> 宠辱不惊，闲看庭前花开花落。去留无意，漫看天边云卷云舒。
+
++ FP
+  + ES6 ...args 无法确定个数  arity 为0
+  + declarative programing 声明式编程
+  + imperative programing  命令式编程
+  + functor
+    + Container.of
+    + Container.prototype.of
+
