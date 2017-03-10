@@ -556,3 +556,33 @@
     + Container.of
     + Container.prototype.of
 
+## 2017/03/06
+> 岁月本长，而忙者自促；天地本宽，而狭者自碍；风花雪月本闲，而扰攘者自冗。
+
++ FP
++ docker
+  + aufs
+
+## 2017/03/07
++ primitive
++ FP
+  + lift
+
+## 2017/03/08
++ FP
+  + [Hinder-Milner](http://stackoverflow.com/questions/399312/what-is-hindley-milner/399392#399392)
+  + parametricity
++ react
+
+## 2017/03/09
++ js
+  + tc39
++ git
+  + rebase --onto target 
+  + rebase -s
+  + grep && ag
+
+## 2017/03/10
+> 因过竹院逢僧话，又得浮生半日闲。
+
++ webpack 热替换图片
