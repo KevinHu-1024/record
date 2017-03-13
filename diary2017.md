@@ -579,10 +579,121 @@
   + tc39
 + git
   + rebase --onto target 
+    + 话说这个功能就像 chery pick 一样
   + rebase -s
+    + 据说指定 strategy 可以直接 pull amend后的
   + grep && ag
 
 ## 2017/03/10
 > 因过竹院逢僧话，又得浮生半日闲。
 
 + webpack 热替换图片
+
+## 2017/03/13
+> 揣而锐之，不可长保。
+
++ https://github.com/gotwarlost/istanbul
++ https://github.com/remy/nodemon
++ mocha
++ nodeunit
++ webpack
+  + yargs 解析命令行，就像是 python 的 argparse
+  + CommonsChunkPlugin
+  + ChunkManifestWebpackPlugin
++ npm
+  + npm link webpack  // symbol link
++ debug
+  + node-inspector
+
+## 2017/03/14
+> 三十功名尘与土，三千里路云和月。
+
++ Array.from(new Map())
++ node-inspector
+  + 不是控制台，而是使用页面模拟一个控制台，不好使，比如监视某个变量
++ sock-js webpack里用到的，貌似原生库？ sockjs-client
++ 举个栗子 setState 不能放到 componentWillMount 里边，失败告终...
++ react class 的 this bind
++ network
+  1. 多域名：cdn 缓存 与 cookie 带宽
+  2. what-happend-when
+  3. 长轮询在服务器 cache，websockets 双向通信的二进制协议，sse content-type: event-stream 的文本协议。
+  4. request and response
+    + DNT 不要追踪用户信息
+    + Cache-Control 缓存控制
+    + Transfer-Encoding
+    + Etag 协商缓存 If-Modified-Since
+    + X-Frame-Options 不允许嵌入 iframe
+  5. method
+    + GET
+    + PUT
+    + POST
+    + DELETE
+    + HEAD
+    + OPTIONS
++ vim
+  + 重新加载 :Agbuffer :bufdo e
++ webpack 2.x
+  + optimize
+    > creat-react-app 优化后仅有46kb (报的并不是 实际大小，而是需要gzip后的大小)，而vue-cli 优化后有 90+ kb
+    + devtool: cheat-module-eval-source-map
+    + 1.97 mb   native
+    + 1.81 mb   webpack -p 即 --optimize-minimize (UglifyJsPlugin) --define process.env.NODE_ENV
+    + [uglifyjs 报错](https://github.com/webpack/webpack/issues/1542)
+    + 1.80 mb   UglifyJsPlugin 与 DefinePlugin 写到配置文件，自定义配置
+    + 4.06 kb / 1.80 mb  把所有三方库都放到 commons 后
+    + 1.46kb / 141kb    设置 devtool: ''
+    + gzip
+  + plugins
+    + html-webpack-plugin
+    + webpack-manifest-plugin 就像 gulp 的 gulp-rev
+    + extract-text-webpack-plugin
+    + react-dev-utils/InterpolateHtmlPlugin
+    + compression-webpack-plugin
+    + webpack-bundle-analyzer
+    + friendly-errors-webpack-plugin
++ chalk
+
+## 2017/03/15
++ ag --ignore-dir  好像直接忽略 .ignorefile
++ webpack
+  + [big flag]
+  + CommonsChunkPlugin
+    + [**Long Term Caching**](https://webpack.js.org/guides/caching/)
+    + **manifest 存在的必要性** 增量缓存
+  + source-read
+    + [].concat({ a:3, b:4 })  Array.prototype.concat() 参数可以是对象，来自 webpack 源码 [processOptions #175](https://github.com/webpack/webpack/blob/master/bin/webpack.js#L175)
+    + webpack.config.js 中 stats 是什么鬼？ [stats](https://webpack.js.org/configuration/stats/)
+    + Error.stackTraceLimit = 30 ;  栈深
+    + ProgressPlugin
+    + output.chunkFileName 与 output.filename 的区别，为什么有两个...
+    + output 配置中 hash 与 chunkHash 的区别
+      + hash 为 webpack 打印第一行的值
+      + chunkhash 为每个 chunk 的 hash
++ think:
+  + 404 页面是否应该重定向链接？ [404 是否应该自动跳转?](https://www.zhihu.com/question/19604683)
+
+## 2017/03/16
++ webpack
+  + CommonsChunkPlugin manifest : how to work? 工程化思考
+  + MultiChunks
+  + TreeShake
+  + node-debug
+    + 多开浏览器还是挺酷的
++ linux
+  + ps -ef
+    + ppid  parent pid
+    + stime start time
+    + time
+    + tty
+
+
+## 2017/03/17
++ webpack
+  + Object.defineProperty(\__webpack_require\_\_, '\__esModule', { value: true })
+  + jsonp 控制多 chunk
+
+## 2017/03/18
++ vim
+  + Ctrl+P 如何查看隐藏文件
+  + 使当前标签页变为分屏页
