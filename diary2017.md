@@ -697,3 +697,54 @@
 + vim
   + Ctrl+P 如何查看隐藏文件
   + 使当前标签页变为分屏页
+
+
+## 2017/03/20
++ vim
+  + = 缩进对于 object 出现问题
+
+## 2017/03/21
++ CC By 4.0
++ webpack
+  + plugin apply(compile)
+  + Compiler => Tapable => Object
+  + WebpackOptionsApply
+
+## 2017/03/22
++ git prune
++ webpack
++ [**const-in-for-loop**](http://stackoverflow.com/questions/31987465/ecmascript-2015-const-in-for-loops)
+    + for (const i of l) {}
+    + for (let i=0; i<10; i++) { let i }
++ scss
+  + 全局变量
++ js
+  + [object object]
+
+## 2017/03/23
+> 功夫，两个字，一横一竖，赢的站着，输的躺下。
+
++ https
+  + www.baidu.com 为什么访问的是 https 而非 http
+    + [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
+      + SSL 攻击
+      + Strict-Transport-Security: max-age=31536000
+      + Chrome 查看地址 [HSTS](chrome://net-internals/#hsts)
+  + www.zhihu.com 为什么设置了 STS，仍然跳到 https?
++ Do Not Track [https://www.zhihu.com/question/20615448]
+  + 不跟踪用户信息，浏览器设置，将会设置一个 DNT: 1 的请求头
++ javascript
+  + '' && 3
+  + Boolean('')
++ vim
+  + emmet class in jsx 应该是 className，jsx 插件是否能解决？
+
+## 2017/03/24
++ react
+  + setState 连续多次，如何渲染
++ webpack
+  + 控制css被引入的顺序
+
+## 2017/03/26
++ vim
+  + 关于 tmux 下vim主题的问题
