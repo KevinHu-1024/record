@@ -9,8 +9,8 @@
    ✔ ansible(32) @created(17-01-14 15:55) @done (17-02-13 16:21)
    ✔ git @created(17-02-13 16:22) @done (17-02-28 15:47)
    ✔ FP @created(17-03-01 14:22) @done (17-03-13 15:54)
-   ☐ webpack-advance @created(17-03-13 15:54)
-   ☐ JS-You-Dont-Know
+   ✔ webpack-2 @created(17-03-13 15:54) @done (17-03-30 15:33)
+   ☐ You-Dont-Know-JS @created(17-03-30 15:33)
    ☐ webpack-dev-server
    ☐ server rendering
    ☐ shell

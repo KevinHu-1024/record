@@ -714,8 +714,8 @@
 + git prune
 + webpack
 + [**const-in-for-loop**](http://stackoverflow.com/questions/31987465/ecmascript-2015-const-in-for-loops)
-    + for (const i of l) {}
-    + for (let i=0; i<10; i++) { let i }
+    + `for (const i of l) {}`
+    + `for (let i=0; i<10; i++) { let i }`
 + scss
   + 全局变量
 + js
@@ -743,8 +743,143 @@
 + react
   + setState 连续多次，如何渲染
 + webpack
-  + 控制css被引入的顺序
+  + 控制css被引入的顺序 module DFS
 
 ## 2017/03/26
 + vim
   + 关于 tmux 下vim主题的问题
+    + 背景显示不全，切换 term: screen-256color 解决问题
+
+## 2017/03/27
++ css
+  + difference between unset, initial, inherit
+  + all: unset
+    + color color 貌似也被排除在外
+    + __style style 自身也有样式，display 初始值为 inline，而浏览器默认设置为 none__
+    + unicode-bidi 排除在外
+    + direction 排除在外
++ javascript
+  + eventloop, macrotask and microtask
+
+## 2017/03/28
++ closure
+  + promise 如何实现异步 的 once
++ javascript
+  + [js 问题集锦](https://github.com/creeperyang/blog/issues/2)
++ webpack
+  + EntryPoint
+  + EntryChunk 
+  + code splitting css
++ algorithm
+  + 多路归并
+
+## 2017/03/30
++ JS
+  + typeof x => x   // function  subtype
+  + difference between function and arrow function
+    + f.prototype / this / class
+    + arguments / caller
+  + __Array.isArray(Array.prototype) // true__
+    + 为什么不是 object ！！！！！！
+    + Number.prototype              // Number
+    + String.prototype              // String
+  + difference between __function__ and __object__
+    + function   // callable object
+
+## 2017/03/31
++ JS
+  + String
+    + s1 = new String('hello'); s1[0] = 'A'       // 'hello'
+    + s2 = 'hello'; s2[0] = 'A'                   // 'hello'
++ css
+  + __div: default: block; initial: inline;__
+    + 浏览器 UA 默认为 block，其实初始值是 inline ！！！
+
+## 2017/04/01
++ JS
+  + String
+    + string 是 immutable，因此任何方法无法改变其本身
+    + Array.prototype.reverse.call(s) 无法使其逆置，因为修改了自身
+    + this 不能赋值
+  + Number
+    + IEEE 754 64-bit binary
+    + 0o363  // octal
+    + 0b111  // binary
+    + 0x127  // hexadecimal
+    + 0.1 + 0.2
+      + Number.EPSILON      2^-52
+      + Number.MAX_SAFE_INTEGER     2^53 - 1
+      + Number.isSafeInteger
+    + 如何判断一个数是整数
+
+## 2017/04/05
++ css
+  + vertical-align: middle 给图片设置！
+
+## 2017/04/06
++ images
+  + [png, jpg, gif - stackoverflow](http://stackoverflow.com/questions/2336522/png-vs-gif-vs-jpeg-vs-svg-when-best-to-use)
+  + [png, jpg, gif - zhihu](https://www.zhihu.com/question/20028452)
+  + 分类
+    + 有损 / 无损
+    + Index Color / Direct Color
+    + 点阵图 / 矢量图
++ inline
+  + span
+  + label
+  + i
+  + a
+  + b
+  + img
++ inline-block
+  + textarea
+  + input
+  + select
++ block
+  + div
+  + h1
+  + p
+
+## 2017/04/07
++ countdown
+  + 倒计时    多次计时
++ react
+  + defaultProps 给 location.state 赋予默认值
++ css
+  + [vertical-align](https://zhuanlan.zhihu.com/p/25808995)
+  + font-family
+    + 华文细黑：STHeiti Light [STXihei] 
+    + 华文黑体：STHeiti 
+    + 华文楷体：STKaiti 
+    + 华文宋体：STSong 
+    + 华文仿宋：STFangsong 
+    + 儷黑 Pro：LiHei Pro Medium 
+    + 儷宋 Pro：LiSong Pro Light 
+    + 標楷體：BiauKai 
+    + 蘋果儷中黑：Apple LiGothic Medium 
+    + 蘋果儷細宋：Apple LiSung Light 
+    + Windows的一些： 
+    + 新細明體：PMingLiU 
+    + 細明體：MingLiU 
+    + 標楷體：DFKai-SB 
+    + 黑体：SimHei 
+    + 宋体：SimSun 
+    + 新宋体：NSimSun 
+    + 仿宋：FangSong 
+    + 楷体：KaiTi 
+    + 仿宋_GB2312：FangSong_GB2312 
+    + 楷体_GB2312：KaiTi_GB2312 
+    + 微軟正黑體：Microsoft JhengHei 
+    + 微软雅黑体：Microsoft YaHei 
+    + 隶书：LiSu 
+    + 幼圆：YouYuan 
+    + 华文细黑：STXihei 
+    + 华文中宋：STZhongsong 
+    + 华文仿宋：STFangsong 
+    + 方正舒体：FZShuTi 
+    + 方正姚体：FZYaoti 
+    + 华文彩云：STCaiyun 
+    + 华文琥珀：STHupo 
+    + 华文隶书：STLiti 
+    + 华文行楷：STXingkai 
+    + 华文新魏：STXinwei 
