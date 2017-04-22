@@ -7,7 +7,7 @@
 2. 2048修复
 3. 走向共和
 4. webpack, broserify等前端模块管理工具
-5. [dae熟悉和使用](http://readthedocs.dapps.douban.com/docs/dae/tutorial/sdk.html)
+5. [dae熟悉和使用]()
 6. leetcode刷10道题目
 7. 修正甜甜的日记(vue-cli)
 8. [git学习](http://segmentfault.com/a/1190000004222489)
@@ -39,9 +39,9 @@
   + 设置等待状态符号，异步加载资源。
   + 滚动到最后时，请求加载下一页
     + 参考vue-cnode
-    + 170415补： 注意 debounce 和 throttle
+    + 注意 debounce 和 throttle    # 170415
   + vue-cli
-    + webpack中的publicpath
+    + webpack中的publicPath
   + vue中filter no work
     + Vue.filter写到new Vue之前
   + vue-router无法显示路由
@@ -1785,3 +1785,765 @@ webpack也不熟，js的基础也有所生疏。
   + try else
   + for else
   + defaultdict
+
+## 2016/07/12
++ webpack
+  + proxy
+  + devtool
++ vuex
+  + mutations
+  + middleware
++ vue-router
+  + 404
++ vue
+  + code spliting
+    + require([], resolve)
+      + 其实是webpack的按需加载
++ backend
+  + test
+    + unit test
+    + e2e test
+    + mocha
+    + chai
+      > 断言库，assert TDD，expect，should BDD，还是喜欢assert  # 170422
+      + assert
+      + expect
+      + should
+  + lint
+    + jslint
+    + eslint
++ zsh
+  + chsh -s /bin/zsh
++ template
+
+## 2016/07/13
++ [A guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
++ vuex
+  + event system
+  + form handler
+  + plugin or middleware
+  + strict mode
++ versions
+  + alpha
+  + beta
+  + rc
+    + 正式版前的最后一个版本了，具体可看看 react，vue 的版本
+  + release
++ CI
++ airbnb
++ project
+  + 2048
+  + cubic
++ 全屏居中
+  + flex
+    + align-items: center; justify-content: center;
++ ES6
+  + const
+    + TDZ 暂时性死域
+    + 不存在变量提升
++ eslint
++ webpack
+  + history fallback api
+  + hot reload
+  + live reload
++ css
+  + 左固定右适应margin-left的问题
+  + columns
+  + flexbox
+    + display
+    + flex-direction
+    + flex-wrap
+    + flex-flow
+    + justify-content
+    + align-items
+    + align-content
+    + order
+    + flex
+    + align-self
+  + grid
+    + grid-template-columns
+    + grid-template-rows
+    + grid-template-areas
+    + grid-area
+    + justify-items
+    + align-items
+    + justify-content
+    + justify-items
+    + grid-auto-rows
+    + grid-auto-columns
+    + grid-auto-flow
+    + grid-column
+    + grid-row
+    + grid-area
+    + justify-self
+    + align-self
+
+## 2016/07/14
++ redis
++ backend
+  + nohup
+  + &
+  + bg
+  + fg
++ vue
+  + created
+    + 先app后路由
++ eslint
+  + rules
+
+## 2016/07/15
++ redux
+  + getstate
+  + [](https://groups.google.com/forum/#!topic/reactjs/Xv9_kVoJJOw)
++ sublime
+  + build
+  + reveal_in_side_bar
+
+## 2016/07/18
++ git
+  + git log -p #file
+  + git log --pretty=oneline #file
+  + git show #hash
++ css
+  + font-awesome
++ react
+  + props
+  + 路由的props哪里来
+    + connect
+  + react-router
+    + React-Router > RouterContext > Component
++ webpack
+  + 设置全局变量
+    + DefinePlugin
+
+## 2016/07/19
++ react
+  + withRouter (this.props.router.go)
+  + connect (connect()(App))
+  + combineReducers / createStore
+  + connect / Provider
+  + mapStateToProps / mapDispatchToProps
+
+## 2016/07/20
++ ES6
+  + Object.assign
+  + Object Rest and Spred
+
+## 2016/07/21
++ fetch
+  + cookie
+  + with creditional
+
+## 2016/07/22
++ [Setup ESLint with ES6 in Sublime Text](http://jonathancreamer.com/setup-eslint-with-es6-in-sublime-text/)
+
++ 函数式编程
++ The zen of python (https://www.python.org/dev/peps/pep-0020/)
++ git
+  + Author
+  + cat ~/.gitconfig
+  + cat .git/config
+
+## 2016/07/25
++ git
+  + git diff #file
+
+## 2016/07/26
++ browser-sync
+  + websocket, long pulling           # 170422
++ react
+  + setState(object || function, callback)
+
+## 2016/07/27
++ react
+  + componentWillReciveProps
+  + immutable Object
+  + setState
+  + replaceState
+  + forceUpdate
+  + context
+
+## 2016/08/01
++ [gevent程序员指南](http://xlambda.com/gevent-tutorial/)
+
++ python
+  + SIP
+  + gevent
+    + gevent.joinall(gevent.spawn(task, i))
+    + WSGIServer
+
+## 2016/08/02 ||
+
+## 2016/08/04 ||
++ js
+  + closure
+
+## 2016/08/05 ||
+
+## 2016/08/07 ||
+
+## 2016/08/08 |||| 
+
+## 2016/08/09 |||
++ css
+  + cursor / text
+  + multi columns
+
+## 2016/08/10 ||
++ webpack
+  + default
+    + 能热加载，但是出错时，无法reload  --hot hmr
+    + babel-preset-react-hmr
+
+## 2016/08/11 ||
++ redux
+  + redux-thunk
+    + 处理异步的action，比如请求数据后 dispatch 一个 action
+  + applyMiddleware
++ react
+  + high-order-component
+    + context 与 hoc 是大多 react 库的模式，比如
+      + react-router  RouterContext -> withRouter(router) -> Component
+      + react-redux   Provider -> connect(state) -> Component
++ webpack
+  + webpack-hot-middleWare
+  + webpack-dev-middleWare
+
+## 2016/08/11 ||
++ git
+  + git log --pretty=oneline --graph --decorated --all 
++ firebase
+  + BaaS   Backend as a Service
+
+## 2016/08/15 |||| ---
++ git
+  + git stash
+  + git stash list
+  + git stash pop === git stash apply & git stash drop
+
+## 2016/08/16 ||| --
++ git
+  + git diff HEAD HEAD@{1}
+  + git log --author wangxian
++ webpack 
+  + how to write a plugin
+
+## 2016/08/17 ||| -
++ webpack
+  + vue-html-loader
+  + CommonsChunkPlugin
++ module.exports and export default
+  + module.exports 运行时
+  + export default 编译时
+
+## 2016/08/18 |
++ webpack
+  + CommonsChunkPlugin
+    + 打包优化：第三方不常变包打包到一块，自有长变包打包到一块，运行时代码打包到 manifest
+
+## 2016/08/19
++ shell
+  + 分离新窗口时以原有目录打开
++ node
+  + path.join and path.posix.join
+
+## 2016/08/22 ||| --
+  + git pull origin develop
+    + git fetch origin develop
+    + git merge origin/develop
+
+## 2016/08/23 |
+  + git
+    + git checkout -b develop --track origin/develop
+    + git branch --set-upstrame-to=origin/develop develop
+    + git push -u origin master    # 常用！
+
+## 2016/08/24 ||| -
++ react-router
+  + indexLink / indexRoute / indexRedirect
+  + plainRoutes
+
+## 2016/08/25 ||| -
++ react-router
+  + react-addons-css-transiton-group
+  + .example-enter / .example-enter-active
+
+## 2016/08/26
++ [](http://feliving.github.io/Sublime-Text-3-Documentation/index.html)
+
+## 2016/08/29
++ react-router
+  + onEnter(nextState, replace, next)
+  + useRouterHistory
+
+## 2016/08/30
++ webpack
+  + proxy
+  + post 
++ dynamic routing
+  + getComponents
+  + getIndexRoute
+  + getChildRoutes
+
+## 2016/09/03
++ webpack
+  + resolver
+    + extensions
+    + alias
+    + fallback
+  + eslint loader
+  + cross env
+
+## 2016/09/06
++ javascript
+  + Array(10).join('a')
+  + 'a'.repeat(10)
++ node-modules/.bin/
++ tmux
+
+## 2016/09/07
++ webpack
+  + node / context
++ javascript
+  + [...divs]
+  + Array.from(divs)
+  + Array.of.apply(null, divs)
+  + Array.apply(null, divs)
+  + Array.prototype.map.call(divs, item => item)
+  + Array.prototype.slice.call(divs)
++ react
+  + setRouteLeaveHook
+
+## 2016/09/08
++ 带 cookie 跨域
+  + cors Access-Control-Allow-Credentials: true, xhr.withCredentials = true
+  + fetch mode: cors, credentials: 'included'
+
+## 2016/09/09
++ webpack
+  + --inline
+  + loader.exclude
+
+## 2016/09/19
++ System.import
+  + 170422: 已废弃，import() 代替
+
+## 2016/09/20
++ git
+  + git clean
++ webpack
+  + Tree Shaking
+  + webpack 源码分析
++ python
+  + Template
+
+## 2016/09/22
++ python
+  + 序列化item
+  + 格式化xml
+  + 快找时间
+  + keywords 对应多个 item
+  + showurl: host
+  + 获取 settings
+  + logging.info
+
+## 2016/09/24
++ pprint.pformat (数据格式错误，最后优化！)
++ mongo
+
+## 2016/09/26
++ logging format
+  + format
+  + level
+  + datefmt
+  + getLogger(__name__)
+  + basicConfig
++ python
+  + self.__dict__ 
+  + classmethod
+
+## 2016/09/27
++ mongo
+  + mongo --quiet test --eval 'printjson(db.Capture.find({record:false}, {_id:0}).toArray())' > capture.json
+
+
+## 2016/10/01
++ urllib.request.getproxies
+
+## 2016/10/08
++ mongo
+  + ensure_index
+  + create_index
+  + unique index
+  + performance (explain)
++ alading
+  + capture (unique index)
++ python (performance cProfile)
+
+## 2015/10/09
++ mongo
+  + update
+    + updateOne
+    + updateMany
+  + save
+  + snapshot
+  + insert and save
+  + $unset 保留一个字段
+  + $currentdate
+  + not null
+  + $setOnInsert, $set
+  + $sparse
+  + write concern
++ pymongo
+  + timezone
++ python
+  + argparse
+    + 一个参数依赖另一个参数的存在
+
+## 2015/10/10
++ 计算所有数组个数的和
++ python
+  + template keyerror
++ mongo
+  + $size
+  + $project
+  + copy subset of one collection to new collection
+    + db.full_set.aggregate([{$match: {}}, {$out: 'subset'}])
+  + pipelines
+
+## 2015/10/11
++ mongo
+  + count
+    + db.user.find()
+    + db.runCommand({count: 'user'})
+    + $project
+    + $match (not $where)
+
+
+## 2015/10/13
++ react
+  + react-text
+
+## 2015/10/21
++ flex
+  + flex-basis width
+
+## 2015/10/28
++ docker
+  + 更换ubuntu的源为阿里云
++ shell
+  + set
+  + shopt
+
+## 2015/10/30
++ docker
+  + 批量删除值为none的镜像
+  + docker rmi $(docker imaes | grep "^<none>" | awk '{print $3}')
++ shell
+  + 单引号与双引号的不同
+
+## 2015/11/03
++ shell
+  + id
+    + 查看用户所有 id
+  + whereis pip
+  + less /etc/passwd
+    + 查看用户信息
+  + less /etc/group
+    + 查看用户组信息
+
+## 2015/11/04
++ react-native
+  + View
+  + ListView
+  + ScrollView
+  + TextInput
+  + Image
+  + Text
+  + Navigator
+  + TouchableHighlight
+
+## 2015/11/05
++ shell
+  + chpasswd
+  + printenv $ENV
+    + echo $ENV
+  + localhost和127.0.0.1的关系
+  + sed
+
+## 2016/11/06
++ docker
+  + docker exec -it container_name bash
+    + 进入运行中容器的bash
+
+## 2016/11/07
++ docker
+  + container 挂载镜像时修改是否会映射到外边
+    + /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8882 -container-ip 172.17.0.79 -container-port 8882
+
+## 2016/11/10
++ ss
++ grep
++ jobs
++ vim:visual
++ ssh_config id_rsa ssh_gen
+
+## 2016/11/11
++ ssh_config
+  + ~/.ssh/config
+    + Host
+      + HostName
+      + Port
+      + User
++ lsof
+
+## 2016/11/13
++ shell
+  + test
+    + -e any kind of archive
+    + -f file
+    + -h symbolic
+    + -r / -w / -x
+    + -s file size greater than 0
+  + docker
+    + [ -d Document ] && echo yes
+    + docker rmi $(docker images | grep “^<none>” | awk ‘{print $3}’)
+  + find
+    + find ~ -name "Dockerfile" -type f
+  + xargs
+    + docker ps -aq | xargs docker rm
+  + history
+
+## 2016/11/14
++ shell
+  + [ERR_UNSAFE_PORT](http://superuser.com/questions/188058/which-ports-are-considered-unsafe-on-chrome)(http://www-archive.mozilla.org/projects/netlib/PortBanning.html#portlist)
+
+## 2016/11/15
++ shell
+  + crontab
+  + run-parts
+  + test -f file
+  + [ -f file ]
+  + /etc/passwd
+  + /etc/group
+  + certbot
+
+## 2016/11/18
++ nginx
+  + worker process
+  + master process
+  + http: { upstream www: { server: * }}
+  + http: { server: { locations /api: { proxy_pass: www } } }
++ shell
+  + ps aux
++ grep
+  + grep -rnw --exclude-dir="*.back" --exclude="*.min.js" . "Vue"
+
+## 2016/11/19
++ nginx
+  + /proxy/asdf -> /proxy 301
+  + proxy_redirect
+
+## 2016/11/20
++ nginx
+  + sub_filter
+
+## 2016/11/21
++ js
+  + 闭包的性能影响
++ css modules
+  + 子组件使用父组件的样式
++ nginx
+  + sub_filter
+  + TCP的几种状态
+  + unix_socks
+  + 403, 404, 416
++ shell
+  + dig
+  + lsof -i:3000 有时会失效？
++ http
+  + http1.1 and http1.0
+
+## 2016/11/22
++ egrep
+  + grep -E
++ kill
+  + signal
++ nginx
+  + upstream
+    > 负载均衡
+    + ip_hash
+    + weight
+
+    + health_check
+    + zone
+    + match
+
+## 2016/11/23
++ django
++ vim
++ http
+  + Connection: keep-alive
+
+## 2016/11/24
++ nginx
+  + sites-enabled / sites-available
+  + forward-proxy and reverse-proxy
+    + 正向代理与反向代理的区别
+  + proxy-redirect
+  + test.com -> www.test.com
+  + try_files
++ redirect
+  + zhihu.com -> http://www.zhihu.com -> https://www.zhihu.com
+
+## 2016/11/25
++ vim
+  + ctrl+o
+  + ctrl+g
+  + c (change)
+  + viminfo
+  + filetype
+
+## 2016/11/26
++ python
+  + pypy
+  + stackless python
+
+## 2016/11/28
++ font-weight 800 1000
++ vim
+  + [vimgolf](http://vimgolf.com/challenges/4d1b1b97c58eaa2a8a0002fc)
+  + vim -d test1 test2
+    + diff 模式编辑两个文件
+  + :3,5 d
+  + d$, D
+  + ctrl c
+  + ctrl a
+  + C
+  + :tabnew .
+    + 新标签页打开目录
+  + :Ex
+  + :ls
+  + :buffer 1
+  + :bn
+  + :bp
+  + :n
+  + :new <FILE>
+  + :split
+  + :vsplit
+  + ctrl + ww :new <FILE>
+  + :split
+  + :vsplit
+  + ctrl + ww
+  + :Vex
+  + set ru?
+  + set list
+
+## 2016/11/29
++ git
+  + --
+  + git reset HEAD --
+  + git submodule add :remote
+  + git remote add -f tool :remote
+  + git subtree add --prefix tool tool master --squash
+  + git fetch tool master
+  + git subtree pull --prefix tool tool master 
+  + git subtree push --prefix tool tool master
+  + 不同的文件设置不同的需求
+    + svn
++ vim
+  + :%s/^/1/g
+  + :s/^/1/g
+  + :3,5s/^/1/g
+  + :3,$s/^/1/g
+
+## 2016/11/30
++ vim
+  + folder
+  + plugin
+  + settings
+  + qG:
+  + g CTRL-g
+  + :set showmode
+  + :copen
+  + X
+  + x
+  + df'
+  + daw
+
+## 2016/12/01
++ vim
+  + das
+    + delete a sentence
+  + :args
+  + :next
+  + :previous
+  + ma
+  + mA
+  + vim -R <FILE>
+  + view <FILE>
+  + :resize +5
+  + CTRL-W +
+  + CTRL-W -
+  + :tab split
+  + :tabnext
+  + ge
+    + go to the end of the previous word
+  + :set encoding=utf-8
+  + viminfo
+  + vim -r
+    + List swap files and exit
+  + :options
+    + :option
+    + 查看 vim 配置
+  + :set textwidth=80
+
+## 2016/12/02
++ vim
+  + folding
+  + zo
+    + open fold on the cursor
+  + za
+  + zR
+    + open all folds
+  + zf
+  + filetype
+  + :set filetype=json
+  + <leader>
+  + nmap
+  + command
+  + autocmd
+  + :set syntax=python
+  + :set filetype=js
+
+## 2016/12/13
++ redux source
+  + symbol-observable
+  + scope
+  + Object.create(null)
+  + Children.only
++ vim
+  + H
+  + L
+  + M
+
+## 2016/12/19
++ css
+  + 行内元素的height继承父级元素的line-height
+
+## 2016/12/23
++ react
+  + 0.14 data-reactid
+  + 15 react-text
+
+## 2016/12/24
++ css
+  + .main | .container .main
+
+## 2016/12/26
++ css
+  + flex: 1, flex: auto
++ vim
+  + :vimgrep :re *
+  + :vim[grep] :re *.c
+  + Ag
