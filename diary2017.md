@@ -914,3 +914,26 @@
   + ssh git@github.com
   + 更改以前commit的author
     + git filter-branch
+
+## 2017/04/18
++ ps
+  + ps 取 hex 色
++ browsersync
++ 关于 react + webpack 中可以使用 node 的模块其中原理
+
+## 2017/04/19
++ curl -O <url>
++ browser_sync
+  + Get: Content-Type: application/octet-stream
+  + Post: Content-Type: text/html
+
+## 2017/04/20
++ node
+  + 一个程序，输出 1:n，思考为什么会卡，如何不卡
+  + 使其后台前台切换
+  + less 使其 buffer，并不会再终端限制行数
+
+## 2017/04/21
++ css @supports
+  + 很大程度解决了关于 IE8 CSS 的兼容问题 !
+  + filter
