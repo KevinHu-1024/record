@@ -937,3 +937,86 @@
 + css @supports
   + 很大程度解决了关于 IE8 CSS 的兼容问题 !
   + filter
+
+## 2017/04/24
++ vim
+  + copy   # V + !pbcopy
+  + vim --version
++ javascript you dont't know
+  + compilation
+    + Tokening / Lexing
+    + Parsing     # AST
+    + Code Generation
+  + compiler
+    + LHS
+    + RHS
+      + Not LHS
+  + let
+    + `for (let i=0; i<10; i++) {}`
+    + `let i; for (i=0; i<10; i++) { let j = i }`
+  + function declaration and function expression
+  + functions first
+  + Principle of Least Privilege
+
+## 2017/04/25
++ js you dont't know
+  + IIFE
+  ``` js
+  (function(){
+    foo = 3
+
+    function foo () {
+      console.log('hello, world.')
+    }
+
+    console.log(foo)
+  })()
+
+  console.log(foo)
+  ```
+  + 
+
+## 2017/04/26
++ git
+  + 列举某个 commit 以后的所有 log
+  + 统计 commit 总数
+    + git rev-list --count --all 
+  + log 只显示增改信息
+    + git log --stat
+  + 统计 merge commit 间有多少文件改动
+    + git diff :commit1 :commit2
+  + 统计 merge commit 间有多少个commit
+  + cheery-pick merge commit
++ [open-terminal-here-in-mac-os](http://stackoverflow.com/questions/420456/open-terminal-here-in-mac-os-finder)
+
+
+## 2017/04/27
++ licecap
++ sessionStorage
+  + 什么才叫 session
++ js you dont know
+  + this
+    ``` js
+    'use strict';
+    var a = 10;
+    console.log(this.a);
+    ```
+
+    > Reminder: regardless of how you get to a function invocation using the default binding rule, the strict mode status of the contents of the invoked function making the this reference -- not the function call-site -- determines the default binding value: either the global object if in non-strict mode or undefined if in strict mode.
+
+
+## 2017/04/28
++ [web server](https://github.com/aosabook/500lines/tree/master/web-server)
++ [SuperSimpleCI](https://github.com/aosabook/500lines/tree/master/ci)
++ You-Dont-Know-JS
+  + DMT                     # Object.create(null)
+  + difference between Object.create(null) and {}
+    + Object.create(null)   # {}
+    + {}                    # {__proto__: {}}
+  + Hard Binding
+    + `foo.bind({ a:3 }).bind({ a: 4})`
+  + Soft Binding            # Todo
+  + Lexical this
+  + js 中方法和函数可以相互转化的，那么python呢
+    + a.run = types.MethodType(run, a)
+    + a.run = functools.partial(run, a)
